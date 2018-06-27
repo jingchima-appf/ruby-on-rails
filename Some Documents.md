@@ -20,4 +20,5 @@ https://github.com/Dynamoid/Dynamoid
 - to get the response, use @response
 - to parse JSON, use JSON.parse 
 
-## 
+## Command Lines
+http://guides.rubyonrails.org/command_line.html
