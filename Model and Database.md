@@ -6,7 +6,15 @@ enum status: { draft: 0, pulished: 1}
 ## Data Validation
 ```ruby
   validates_presence_of :title, :body
+  
+  # validates 
+  class Article < ApplicationRecord
+    validates :title, presence: true, length: {minimum: 5}
+  end
 ```
+see also http://guides.rubyonrails.org/active_record_validations.html \
+
+
 
 ## Data Relationships
 - Add relations:
@@ -85,3 +93,4 @@ enum status: { draft: 0, pulished: 1}
 - Database operations
   - http://guides.rubyonrails.org/active_record_querying.html
   
+- 
