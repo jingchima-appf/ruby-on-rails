@@ -82,5 +82,6 @@ enum status: { draft: 0, pulished: 1}
   - delete migration file
     https://stackoverflow.com/questions/3872586/how-to-delete-migration-files-in-rails-3
   - Redo a single migration: rake db:migrate:redo VERSION=xxxxxxx
-
+- Database operations
+  - http://guides.rubyonrails.org/active_record_querying.html
   
