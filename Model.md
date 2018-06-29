@@ -50,4 +50,37 @@ enum status: { draft: 0, pulished: 1}
     Book.order('sales DESC').first
   ```
 - 
+
+
+## Database Operations
+- Default value
+  - Set default value in migration file,
+  - Set default value in model
+  ```ruby
+    class EmailValidation < ApplicationRecord
+    after_initialize :set_defaults
+    def set_defaults
+      self.is_valid ||= false
+    end
+  ```
+
+- Add index
+  https://stackoverflow.com/questions/1449459/how-do-i-make-a-column-unique-and-index-it-in-a-ruby-on-rails-migration
+  https://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add_index
+  Remove index
+  https://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/remove_index
+
+- Some operations 
+  - Delete all: `Skill.delete_all`
+  
+- To do changes to a database, usually use migration
+  - generate a migration:
+    ` rails g migration migration_name `
+  - write the migration file
+  - do migration
+    `rake db:migrate`
+  - delete migration file
+    https://stackoverflow.com/questions/3872586/how-to-delete-migration-files-in-rails-3
+  - Redo a single migration: rake db:migrate:redo VERSION=xxxxxxx
+
   
