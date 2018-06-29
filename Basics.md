@@ -24,10 +24,7 @@ e.g.
    resources :portfolios, only: [:show]
    get 'portfolio/:id', to: 'portfolio#show', as: 'portfolio_show' # 'as' specifies the prefix
 ```
-
-- 
-
-
-
-## redirect
-- 
+- redirect
+```ruby
+  get '/stories', to: redirect('/posts') # this is to redirect to another route
+```
