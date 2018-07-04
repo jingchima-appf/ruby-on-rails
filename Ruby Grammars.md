@@ -20,3 +20,7 @@
   Foo.new.hello   # => "hello"
   Foo.new.goodbye # => NoMethodError: undefined method `goodbye' for #<Foo:0x1af30c>
   ```
+  
+## Self Class
+- https://stackoverflow.com/questions/1630815/why-isnt-the-eigenclass-equivalent-to-self-class-when-it-looks-so-similar
+
