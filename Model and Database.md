@@ -94,3 +94,11 @@ see also http://guides.rubyonrails.org/active_record_validations.html \
   - http://guides.rubyonrails.org/active_record_querying.html
   
 - 
+
+## Changes in model and db file
+- If do changes in migration file, we need:
+  1. Drop database
+  2. Create database
+  3. Do migration again
+  
+see this: https://stackoverflow.com/questions/1416600/rails-i-update-migration-file-then-run-dbmigrate-but-my-schema-isnt-updating
