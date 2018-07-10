@@ -102,3 +102,16 @@ see also http://guides.rubyonrails.org/active_record_validations.html \
   3. Do migration again
   
 see this: https://stackoverflow.com/questions/1416600/rails-i-update-migration-file-then-run-dbmigrate-but-my-schema-isnt-updating
+
+## Change, up, down methods in migration file
+```ruby
+  reversible do |change|
+    change.up do
+      ...
+    end
+    change.down do
+      ...
+    end
+  end
+``
+see: https://makandracards.com/makandra/29223-how-to-combine-change-up-and-down-in-a-rails-migration
